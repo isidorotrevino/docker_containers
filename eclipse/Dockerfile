@@ -2,7 +2,7 @@ FROM vintec/basejava:v8
 MAINTAINER Isidoro Trevino "isidoro.trevino@vintec.mx"
 
 
-RUN wget http://mirror.csclub.uwaterloo.ca/eclipse/technology/epp/downloads/release/neon/3/eclipse-jee-neon-3-linux-gtk-x86_64.tar.gz -O /tmp/eclipse.tar.gz -q && \
+RUN wget http://mirror.csclub.uwaterloo.ca/eclipse/technology/epp/downloads/release/oxygen/M6/eclipse-jee-oxygen-M6-linux-gtk-x86_64.tar.gz -O /tmp/eclipse.tar.gz -q && \
     echo 'Installing eclipse' && \
     sudo apt-get update && sudo apt-get install -y libgtk2.0-0 libcanberra-gtk-module && \
     sudo tar -xf /tmp/eclipse.tar.gz -C /opt && \

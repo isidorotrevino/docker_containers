@@ -1,0 +1,7 @@
+http://download.eclipse.org/releases/neon
+http://download.eclipse.org/eclipse/updates/4.6
+http://download.eclipse.org/webtools/repository/neon
+http://download.eclipse.org/eclipse/updates/4.6/R-4.6-201606061100
+http://dist.springsource.org/snapshot/GRECLIPSE/e4.6/
+http://dist.springsource.com/release/TOOLS/update/e4.6/
+http://download.eclipse.org/buildship/updates/e46/releases/1.0

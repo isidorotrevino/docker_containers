@@ -4,7 +4,7 @@ docker run -ti \
            -e DISPLAY=$DISPLAY \
            -v /tmp/.X11-unix:/tmp/.X11-unix \
            -v /opt/workspaces/projects:/projects:rw \
-           -v /opt/workspaces/sts383:/home/developer/workspace:rw \
+           -v /opt/workspaces/sts384:/home/developer/workspace:rw \
            -v /opt/jdks:/jdks:rw \
            -v /opt/tmp:/host_tmp:rw \
 		   -v /opt/workspaces/support_libs:/support:rw \
@@ -12,6 +12,6 @@ docker run -ti \
            -v `echo $HOME`/.gradle:/home/developer/.gradle \
            -v `echo $HOME`/.m2:/home/developer/.m2 \
            --name eclipse_sts \
-           vintec/eclipse_sts:3.8.3
+           vintec/eclipse_sts:3.8.4
 
 

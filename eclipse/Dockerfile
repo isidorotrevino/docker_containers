@@ -2,7 +2,7 @@ FROM vintec/basejava:v8
 MAINTAINER Isidoro Trevino "isidoro.trevino@vintec.mx"
 
 
-RUN wget http://mirror.csclub.uwaterloo.ca/eclipse/technology/epp/downloads/release/neon/2/eclipse-jee-neon-2-linux-gtk-x86_64.tar.gz -O /tmp/eclipse.tar.gz -q && \
+RUN wget http://mirror.csclub.uwaterloo.ca/eclipse/technology/epp/downloads/release/neon/3/eclipse-jee-neon-3-linux-gtk-x86_64.tar.gz -O /tmp/eclipse.tar.gz -q && \
     echo 'Installing eclipse' && \
     sudo apt-get update && sudo apt-get install -y libgtk2.0-0 libcanberra-gtk-module && \
     sudo tar -xf /tmp/eclipse.tar.gz -C /opt && \
@@ -27,7 +27,7 @@ RUN chmod +x /usr/local/bin/eclipse && \
     chmod 755 /tmp/files/*.sh && \
 	wget http://spring-roo-repository.springsource.org.s3.amazonaws.com/release/ROO/spring-roo-1.3.2.RELEASE.zip -O /opt/springroo.zip -q && \
 	unzip /opt/springroo.zip && \
-    wget https://projectlombok.org/downloads/lombok.jar -O /tmp/files/lombok.jar && \
+    wget http://central.maven.org/maven2/org/projectlombok/lombok/1.16.16/lombok-1.16.16.jar -O /tmp/files/lombok.jar && \
 	java -jar /tmp/files/lombok.jar install /opt/eclipse && \
     /tmp/files/prepare_eclipse.sh /opt/eclipse && \
 	chown -R developer:developer /opt/ && \
